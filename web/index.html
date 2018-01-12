@@ -75,15 +75,15 @@
     <div class="row">
         <div id="clockdiv" class="col-sm-4">
             <div>
-                <span class="years"></span>
+                <span class="years">???</span>
                 <div class="smalltext">Years</div>
             </div>
             <div>
-                <span class="months"></span>
+                <span class="months">???</span>
                 <div class="smalltext">Months</div>
             </div>
             <div>
-                <span class="days"></span>
+                <span class="days">???</span>
                 <div class="smalltext">Days</div>
             </div>
         </div>
@@ -227,7 +227,7 @@
 
     function steps(year, month, day, current, target) {
         var steps = 0;
-        for (var safety = 0; safety < 1000; ++safety) {
+        for (var safety = 0; safety < 999; ++safety) {
             var candidate = new Date(
                 current.current.getFullYear() + year,
                 current.current.getMonth() + month,
@@ -244,7 +244,7 @@
     }
 
     function remaining(year, month, day) {
-        var target = new Date(Date.parse("2020-01-14 00:00"));
+        var target = new Date(2020, 0, 14);
         var current = {current: new Date(year, month, day)};
 
         var years = steps(1, 0, 0, current, target);
