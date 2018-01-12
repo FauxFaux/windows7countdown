@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous"/>
+
+    <style type="text/css">
+        body {
+            font-family: "Segoe UI", Segoe, "Lucida Grande", "Lucida Sans", Verdana, sans-serif;
+        }
+
+        h1 {
+            font-weight: 200;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        #clockdiv {
+            font-family: sans-serif;
+            color: #f1f1f1;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+            white-space: nowrap;
+        }
+
+        #clockdiv > div {
+            padding: 10px;
+            border-radius: 3px;
+            background: #acc6e1;
+            display: inline-block;
+        }
+
+        #clockdiv div > span {
+            padding: 15px;
+            border-radius: 3px;
+            background: #007ec5;
+            display: inline-block;
+        }
+
+        .smalltext {
+            padding-top: 5px;
+            font-size: 16px;
+        }
+
+        .complaint {
+            font-style: italic;
+        }
+
+        img {
+            max-width: 100%;
+            margin-top: 2em;
+        }
+
+        .pad {
+            height: 20em;
+        }
+    </style>
+</head>
+<body>
+<h1>Windows 7 Support Ends 2020-01-14</h1>
+<div class="container">
+    <div class="row">
+        <div id="clockdiv" class="col-sm-4">
+            <div>
+                <span class="years"></span>
+                <div class="smalltext">Years</div>
+            </div>
+            <div>
+                <span class="months"></span>
+                <div class="smalltext">Months</div>
+            </div>
+            <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <p>That's right. Your favourite legacy operating system isn't long for this world.</p>
+            <p>I, for one, will be celebrating Windows 7 passing into obsolescence, and falling out of use.
+                Much like we celebrated the
+                <a href="https://developer.microsoft.com/en-us/microsoft-edge/ie6countdown/">demise of IE6</a>,
+                and the eventual
+                <a href="https://www.microsoft.com/en-us/windowsforbusiness/end-of-xp-support">downfall of Windows
+                    XP</a>. I hope you joined us for that.
+            </p>
+            <p>You've had over five years (and counting!) to voluntarily switch to a newer, better operating system.
+                Finally, the time is coming where you'll be forced to join us in the future, or suffer from lack of
+                support for newer hardware, a cessation of developers suffering to to use old tools to support you,
+                and a continually increasing security risk.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 class="complaint">&ldquo;But change is bad!&rdquo;</h2>
+            <p>You don't like new things, I get it.
+                You can think of plenty of justifications how upgrading is a minor inconvenience to you. You've
+                found a synthetic benchmark that shows that some particular task is slower. You don't like the
+                colour of the buttons.</p>
+            <p>The world moves on. Technology gets better. Things change. People complain.
+                It is the way of the world. Luckily, in this case, you have no choice; you cannot prevent us
+                from inventing the automobile as you're too obsessed with your prize horse. You cannot prevent
+                us from curing disease because you've heard <em>complete lies</em> about how vaccines are bad.</p>
+        </div>
+        <div class="col-sm-6">
+            <h2 class="complaint">&ldquo;It's expensive!&rdquo;</h2>
+            <p>You had a year to claim a
+                <a href="https://support.microsoft.com/en-gb/help/12435/windows-10-upgrade-faq">free upgrade</a>.
+            </p>
+            <p>Assuming you run it for the full 7 years left, Windows 10 costs around ¼th of what Office costs
+                <em>every year</em>. Around ⅛th (<em>every year</em>) of the software I am writing this document with.
+                ⅛th (<em>every year</em>) of Photoshop. <em>3%</em> (<em>every year!</em>) of the cheapest commercial
+                development kit for Windows. I suspect you use Windows more than these.</p>
+            <p>If you're using Windows 7 (or earlier!) on a consumer laptop, you're almost certainly better off
+                just buying a new laptop; the improvement you will see will be immense.</p>
+            <a name="chart"></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"><img src="win7chart.png" alt="Win7's decline vs. supported OSes"/></div>
+        <div class="col-sm-8">
+            <h2 class="complaint">&ldquo;It'll never die!&rdquo; <a href="#chart">&#128279;</a></h2>
+            <p class="complaint">
+                Microsoft won't let me down! They'll extend support indefinitely for free for my
+                favourite OS!
+            </p>
+            <p>This chart shows the current progress of Windows 7 being replaced, according to
+                <a href="http://gs.statcounter.com/windows-version-market-share/desktop/worldwide/#monthly-201501-201801">StatCounter</a>.
+            </p>
+
+            <p>The blue, significantly upwards trending line, is the percentage of people using modern, supported
+                operating systems.</p>
+
+            <p>The red, significantly downwards trending line, is the percentage of people using Windows 7.</p>
+
+            <p>The X-axis shows "months until end of support". This might seem like an odd choice, but it allows
+                us to make an easy comparison to the Windows XP version of this graph, below.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <h2 class="complaint">&ldquo;The trend will stop, people will stop upgrading!&rdquo;</h2>
+            <p>I don't really know why anyone would think this. There's going to be some people who never
+                upgrade, but those people aren't interesting; so long as there's few enough of them, they will
+                be forever forgotten.</p>
+
+            <p>But, just in case, here's a chart showing the same data, but leading up to Windows XP's end of
+                life, in 2014.</p>
+
+            <p>Looks pretty much the same to me. Maybe the trend shallows out a bit right at the end, but
+                before then it <em>speeds up</em> for a bit, as the panic sets in.</p>
+
+            <p>See how the crossing point, where the lines meet at around 50%, is at almost exactly the
+                same time before the end of life.</p>
+        </div>
+        <div class="col-sm-4"><img src="winxpchart.png" alt="WinXP's decline vs. supported OSes"/></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h2 class="complaint">&ldquo;Microsoft will extend free support!&rdquo;</h2>
+            <p>I feel they would only do this if it looked like there were to be an unreasonable number of
+                unsupported users after the end of support. The above charts do not predict this.</p>
+
+            <p>XP was extended for two years. At its original End of Life date, it would have had 36% market
+                share. Windows 7 could have below 25%. Perhaps they'll offer some critical patches for the
+                first six months? A year? Good luck with that.</p>
+        </div>
+
+        <div class="col-sm-6">
+            <h2 class="complaint">&ldquo;Developers will continue supporting me!&rdquo;</h2>
+            <p>XP was dropped by developers as the usage dropped off, as will happen with Windows 7.</p>
+            <p>Games started dropping support long before the end of life date. There are plenty of
+                Windows 10 only games today (but this is mostly Microsoft being weird).</p>
+            <p>Chrome dropped support two years after the end of life date.
+                Firefox dropped support after three years. Java (which was relevant at the time!)
+                dropped support immediately.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" style="text-align: center">
+            <hr/>
+            <h2>Please Upgrade</h2>
+            <p>In summary, the future is here. Please stay with it, and don't get stuck in the past. Please.</p>
+            <hr/>
+            <p><a href="https://blog.goeswhere.com/">Faux' blog</a> &mdash;
+                <a href="https://github.com/FauxFaux/windows7countdown">github</a></p>
+            <div class="pad"></div>
+        </div>
+    </div>
+</div>
+<script>
+    function setup_clock(id) {
+        var clock = document.getElementById(id);
+        var years = clock.querySelector('.years');
+        var months = clock.querySelector('.months');
+        var days = clock.querySelector('.days');
+
+        function updateClock() {
+            var now = new Date();
+            var t = remaining(now.getFullYear(), now.getMonth(), now.getDate());
+
+            years.innerHTML = t.years;
+            months.innerHTML = t.months;
+            days.innerHTML = t.days;
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    function steps(year, month, day, current, target) {
+        var steps = 0;
+        for (var safety = 0; safety < 1000; ++safety) {
+            var candidate = new Date(
+                current.current.getFullYear() + year,
+                current.current.getMonth() + month,
+                current.current.getDate() + day);
+
+            if (candidate > target) {
+                break;
+            }
+            current.current = candidate;
+            steps += 1;
+        }
+
+        return steps;
+    }
+
+    function remaining(year, month, day) {
+        var target = new Date(Date.parse("2020-01-14 00:00"));
+        var current = {current: new Date(year, month, day)};
+
+        var years = steps(1, 0, 0, current, target);
+        var months = steps(0, 1, 0, current, target);
+        var days = steps(0, 0, 1, current, target);
+
+        return {years: years, months: months, days: days};
+    }
+
+    setup_clock('clockdiv');
+</script>
+</body>
+</html>
